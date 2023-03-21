@@ -1,0 +1,11 @@
+@import './overlap-img.scss';
+
+body,
+html {
+	height: 100%;
+	user-select: none;
+}
+
+html {
+	scroll-behavior: smooth;
+}

@@ -1,0 +1,78 @@
+
+.overlap-image-wrapper {
+	.overlap-img-block {
+		position: relative;
+		width: 100%;
+		>img {
+			width: 95%;
+			display: block;
+			object-fit: contain;
+			margin: auto;
+			@media (min-width: 1280px) {
+				width: 650px;
+				height: 460px;
+			}
+		}
+	}
+	.overlap-img-block.left {
+		>img {
+			max-width: 95%;
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			top: 25%;
+			right: 30%;
+			width: 100%;
+			height: 80%;
+			background: #6366f1;
+			border: 1px solid #6366f1;
+			border-bottom-right-radius: 25%;
+			z-index: -1;
+			@media (min-width: 1280px) {
+				height: 85%;
+			}
+		}
+	}
+	.overlap-img-block.right {
+		>img {
+			max-width: 90%;
+		}
+		@media (max-width: 1024px) {
+			left: 5%;
+			>img {
+				max-width: 65%;
+			}
+		}
+		@media (max-width: 1023px) {
+			left: 0%;
+			>img {
+				max-width: 75%;
+			}
+		}
+
+		@media (max-width: 576px) {
+			>img {
+				max-width: 85%;
+			}
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			top: 30%;
+			left: 20%;
+			width: 100%;
+			height: 95%;
+			background: #6366f1;
+			border: 1px solid #6366f1;
+			border-bottom-left-radius: 25%;
+			z-index: -1;
+			@media (min-width: 1280px) {
+				height: 70%;
+			}
+			@media (min-width: 1281px) {
+				height: 85%;
+			}
+		}
+	}
+}

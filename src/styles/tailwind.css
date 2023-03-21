@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-item-active {
+  @apply text-softRed underline underline-offset-8 decoration-2 font-bold
+}
+
+@layer base {
+  html {
+    font-family: Proxima Nova, system-ui, sans-serif;
+    @apply text-gray-800
+  }
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex justify-center items-center
+  }
+
+  .align-center {
+    @apply absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]
+  }
+}

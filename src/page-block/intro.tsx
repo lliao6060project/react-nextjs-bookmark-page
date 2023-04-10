@@ -2,7 +2,6 @@ import BaseButton from "@/components/BaseButton"
 import OverlapImage from "@/components/OverlapImage"
 import ArtcleBlock from "./components/ArtcleBlock"
 
-/* eslint-disable @next/next/no-img-element */
 const Feature = () => {
   return (
     <>
